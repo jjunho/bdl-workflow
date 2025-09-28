@@ -1,0 +1,92 @@
+# Book Development Lifecycle (BDL) - .gitignore
+
+# Arquivos temporários de escrita
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# Arquivos de backup automático
+*.bak
+*.backup
+*_backup.*
+
+# Logs e arquivos de debug
+*.log
+debug/
+logs/
+
+# Arquivos de configuração pessoal
+config.local.*
+.env
+.env.local
+
+# Arquivos gerados automaticamente
+build/
+dist/
+output/
+exports/
+
+# Arquivos de cache de editores
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos temporários do sistema
+.Trash-*/
+$RECYCLE.BIN/
+
+# Arquivos específicos do projeto
+# Rascunhos pessoais não versionados
+capitulos/rascunhos/pessoal/
+notas_privadas/
+
+# Versões antigas ou experimentais
+*_old.*
+*_test.*
+experimental/
+
+# Arquivos de métricas temporárias
+metricas/temp/
+analytics/cache/
+
+# Configurações específicas do usuário
+user_preferences.md
+local_settings.md
+
+# Arquivos de feedback sensível
+feedback/confidencial/
+feedback/*/private_notes.md
+
+# Node modules (caso use ferramentas JS)
+node_modules/
+package-lock.json
+
+# Python cache (caso use scripts Python)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Arquivos comprimidos temporários
+*.zip
+*.tar.gz
+*.rar
+temp_archive.*
+
+# Documentos de trabalho não finalizados
+wip/
+work_in_progress/
+drafts_temp/
+
+# Exportações temporárias
+*.pdf.tmp
+*.docx.tmp
+*.epub.tmp
