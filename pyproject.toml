@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bdlcli"
+version = "0.1.0"
+description = "CLI para workflow BDL"
+authors = [
+    { name = "Seu Nome", email = "seu@email.com" }
+]
+requires-python = ">=3.7"
+dependencies = [
+    "pyyaml"
+]
+
+[project.scripts]
+bdlcli = "bdlcli.cli:main"
