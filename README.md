@@ -1,9 +1,76 @@
-# 📘 Manual Básico do BDL (Book Development Lifecycle)
+# � BDL Workflow - Book Development Lifecycle
 
-## 🔹 1. Inicialização
+> A complete ecosystem for AI-powered book writing and project management
+
+## 🏗️ Architecture Overview
+
+This repository contains **two complementary but independent projects**:
+
+| Project | Purpose | Technology | Distribution |
+|---------|---------|------------|--------------|
+| **[bdlcli-project/](./bdlcli-project/)** | Project Management | Python CLI | PyPI Package |
+| **[BDL-project/](./BDL-project/)** | AI Writing System | Agent Prompts | Template/Framework |
+
+## 🚀 Quick Start
+
+### 1. Install the CLI Tool
 
 ```bash
-$ bdl init livro --title "Livro de Teste" --author "Autor de Teste"
+# From PyPI (future)
+pip install bdlcli
+
+# Or from source
+cd bdlcli-project/
+pip install -e .
+```
+
+### 2. Initialize a Book Project  
+
+```bash
+bdl init my-book --title "My Amazing Book" --author "Your Name"
+```
+
+### 3. Add AI Agents (Optional)
+
+Copy the BDL agent system to your project for AI-powered writing workflows.
+
+## 📖 What Each Project Does
+
+### 📱 BDL CLI (`bdlcli-project/`)
+
+**The "Plumbing"** - Handles file management and project operations:
+
+- ✅ Project initialization with proper structure
+- 📊 Statistics and progress tracking  
+- 📚 Compilation to PDF/EPUB/HTML
+- 🔧 Simple, reliable, minimal dependencies
+
+### 🤖 BDL AI Agents (`BDL-project/`)  
+
+**The "Creative Brain"** - AI-powered writing workflows:
+
+- ✍️ 8 specialized writing agents (Writer, Critic, Archivist, etc.)
+- 🔄 Structured workflow: `/iniciar` → `/revisar` → `/criticar` → `/finalizar`
+- 🎨 Style governance and consistency validation
+- 🌿 Git branching integration for collaborative writing
+
+## 🔄 How They Work Together
+
+```mermaid
+graph LR
+    A[bdl init] --> B[Project Structure]
+    B --> C[AI Agents]
+    C --> D[/iniciar workflow]
+    D --> E[bdl stats]
+    E --> F[bdl compile]
+```
+
+1. **CLI creates structure**: `bdl init` sets up directories and metadata
+2. **Agents create content**: AI workflows produce and refine chapters  
+3. **CLI manages output**: `bdl compile` generates final manuscripts
+
+## 📁 Generated Project Structure
+
 ```
 
 | **Aspecto**       | **Descrição**                                                                                                                                                                     |
@@ -15,6 +82,7 @@ $ bdl init livro --title "Livro de Teste" --author "Autor de Teste"
 **Estrutura criada:**
 
 ```
+
 livro/
 ├── .github/prompts/
 │   ├── arquivista.prompt.md
@@ -27,6 +95,7 @@ livro/
 │   └── workflow.md
 ├── .gitignore
 └── BDL.yaml
+
 ```
 
 ### 📑 Exemplo de `BDL.yaml`
@@ -40,7 +109,7 @@ version: "0.1.0"
 created_at: "2025-09-29"
 ```
 
-* **Sem título e autor:**
+- **Sem título e autor:**
 
 ```yaml
 title: ""
@@ -54,7 +123,7 @@ created_at: "2025-09-29"
 ## 🔹 2. Estatísticas
 
 ```bash
-$ bdl stats
+bdl stats
 ```
 
 | **Aspecto**       | **Descrição**                                                                                                                                                 |
@@ -68,9 +137,9 @@ $ bdl stats
 ## 🔹 3. Compilação
 
 ```bash
-$ bdl compile --pdf
-$ bdl compile --epub
-$ bdl compile --html
+bdl compile --pdf
+bdl compile --epub
+bdl compile --html
 ```
 
 | **Aspecto**       | **Descrição**                                                                                                              |

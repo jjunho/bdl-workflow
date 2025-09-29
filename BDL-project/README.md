@@ -4,7 +4,11 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#licença)
 [![AI Agents](https://img.shields.io/badge/agents-7-orange.svg)](#agentes-especializados)
 
-> Sistema avançado de desenvolvimento de livros com inteligência artificial especializada
+# 🤖 BDL AI Agent System - Book Development Lifecycle AI Writers
+
+A sophisticated system of AI agents designed to collaborate on book writing projects with professional-grade quality control and workflow management.
+
+## Overview
 
 O **Book Development Lifecycle (BDL) v0.5.1** é um framework completo para criação, desenvolvimento e refinamento de obras literárias utilizando agentes de IA especializados. Cada agente possui expertise específica no processo de escrita, desde a catalogação de lore até a análise crítica final.
 
