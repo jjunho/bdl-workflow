@@ -5,6 +5,29 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [0.5.2] - 2025-09-29
+
+### Adicionado
+
+- **Empacotamento Python**: Projeto reestruturado como pacote instalável (`bdlcli`) com `setup.py`, `pyproject.toml` e `MANIFEST.in`.
+- **CLI Unificado**: Código do CLI migrado para `bdlcli/cli.py` com entry point `bdlcli`.
+- **Distribuição**: Geração de arquivos `.whl` e `.tar.gz` para redistribuição via pip.
+- **Testes Automatizados**: Testes para o CLI em `testes/` usando pytest.
+- **.gitignore Moderno**: Ignora ambientes virtuais, builds, dist, cache, VSCode e saídas temporárias.
+
+### Alterado
+
+- **Estrutura de Diretórios**: Separação clara entre código (`bdlcli/`), dados (`BDL/`) e testes (`testes/`).
+- **Documentação**: Atualização do README e CHANGELOG para refletir empacotamento e uso do CLI.
+
+### Corrigido
+
+- **Caminhos e Imports**: Ajustes para garantir funcionamento do CLI e testes sempre dentro de `BDL/`.
+
+### Técnico
+
+- **Compatibilidade**: Pacote pronto para instalação local e futura publicação no PyPI.
+
 ## [0.5.1] - 2025-09-29
 
 ### Adicionado
